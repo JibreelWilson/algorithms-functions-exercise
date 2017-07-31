@@ -82,7 +82,8 @@
 // }
 // console.log(results(num))
 // 5. Write function that translates a text to Pig Latin, and another that translates back. English is translated to Pig Latin by taking the first letter of every word, moving it to the end of the word and adding "ay".
-// var engToPig = function(oldword){
+// Done!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//var engToPig = function(oldword){
 // //turn input string into array
 // var newArr =[]
 // var pigLatin=""
@@ -237,6 +238,17 @@
 // [1, 3, -4, 5, 7, 9] -> [5, 7, 9] OR [1, 3, -4, 5, 7, 9]
 
 // (Source: http://venus.cs.qc.edu/~ryba/cs111/Array.pdf with edits, which may no longer be accessable)
+// var numbers = [1,5,-4,3,2,-3]
+// var largestSubArray = function(inputArr, subSize){
+// 	var start = 0
+// 	for(var i=0;i<inputArr.length-subSize;i++){
+// 		for(var j =start, j < start+subSize; j++) {
+// 			console.log(j)
+// 		}
+// 	}
+// }
+// largestSubArray(numbers, 3)
+
 
 // 11. One way of encoding a message is called a "square code". Given a message like:
 
@@ -256,7 +268,34 @@
 // Write two functions, called encodeSquare and decodeSquare. encodeSquare should be able to encrypt any arbitrary string, and decodeSquare should be able to unencrypt any arbitrary encoded string. The unencrypted string will have no spaces, and that's ok.
 
 // (source: http://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html, with edits)
+// var input="Have a nice day!"
 
+// var square =function(input){
+// var root=Math.sqrt(input.length)
+// inputAsArray=input.split(' ')
+// var output =[
+// 			[],
+// 			[],
+// 			[],
+// 			[],
+// ]
+// for(var i=0; i<output.length;i++){
+// 	for(var j=0; j<4; j++){
+// 		output[i].push(inputAsArray.shift())
+// 	}
+// }
+// for(var i =0;i<output.length;i++ ){
+// 	output[i]=output[i].join('')
+// }
+// for(var i =0;i<output.length;i++){
+// 	console.log(output[i])
+// }
+// 	return output
+// }
+// var unsquare = function(input){
+// 	return input.split('\n').join('')
+// }
+// console.log(unsquare(input))
 // 12. Write a program to count the occurrences of all letter pairs in a sample of text (like the first paragraph of the Constitution). Disregard differences between lower and upper case letters. Output the 10 most frequent letter pairs, in order by percent of total. Your program should correctly process situations where the input string is empty or where less than 10 pairs occur.
 
 // Example output:
@@ -266,17 +305,7 @@
 // ...
 
 
-// var numbers = [1, 4, 9];
-// var doubles = numbers.map(function(num) {
-//   return num * 2;
-// });
 
-// var words = ["bill", "bob", "thomas"]
-// var capitals = words.map(function(word){
-// 	return word.toUpperCase()
-// }) 
-
-// console.log(capitals(words))
 
 
 
