@@ -1,39 +1,4 @@
-// 5. Write function that translates a text to Pig Latin, and another that translates back. English is translated to Pig Latin by taking the first letter of every word, moving it to the end of the word and adding "ay".
-// var engToPig = function(oldword){
-// //turn input string into array
-// var newArr =[]
-// var pigLatin=""
-// newArr = oldword.toLowerCase().split(" ")
-// for(var i=0;i<newArr.length;i++){
 
-// newArr[i] =newArr[i] + newArr[i][0]//adds letter to the end of each word
-// newArr[i] =newArr[i].substring(1)//removed first letter
-
-// newArr[i] =newArr[i]+'ay'//added ay to every word
-// // newArr[i] =newArr[i].toLowerCase()//made all letters lowercase
-// }
-// pigLatin = newArr.join(" ")//made array a string again
-// pigLatin = pigLatin.charAt(0).toUpperCase() + pigLatin.substring(1)//makes first letter of sentence capital
-// return (pigLatin)
-// }
-// console.log(engToPig('The quick brown fox'))
-//===================
-// var latToEn = function(oldword){
-// //turn string into array
-// var newArr=[]
-// newArr = oldword.split(" ")
-// for(var i=0;i<newArr.length;i++){
-// 	newArr[i]= newArr[i].slice(0, -2);//takes ay from each word
-// 	newArr[i]=newArr[i][newArr[i].length - 1]+newArr[i]
-// 	newArr[i]=newArr[i].slice(0,-1)
-// 	newArr[i] =newArr[i].toLowerCase()
-// }
-// english=newArr.join(" ")
-// english = english.charAt(0).toUpperCase() + english.substring(1)
-// console.log(english)
-// }
-
-// console.log(latToEn("Hetay uickqay rownbay oxfay"))
 // 1. Write a function which takes an array of numbers and returns the mode of that array.
 // [2, 4, 4, 4, 6, 6, 1] - > 4
 // [0, 0, 0, 10] -> 0
@@ -116,32 +81,62 @@
 // }
 // }
 // console.log(results(num))
+// 5. Write function that translates a text to Pig Latin, and another that translates back. English is translated to Pig Latin by taking the first letter of every word, moving it to the end of the word and adding "ay".
+// var engToPig = function(oldword){
+// //turn input string into array
+// var newArr =[]
+// var pigLatin=""
+// newArr = oldword.toLowerCase().split(" ")
+// for(var i=0;i<newArr.length;i++){
 
+// newArr[i] =newArr[i] + newArr[i][0]//adds letter to the end of each word
+// newArr[i] =newArr[i].substring(1)//removed first letter
 
+// newArr[i] =newArr[i]+'ay'//added ay to every word
+// // newArr[i] =newArr[i].toLowerCase()//made all letters lowercase
+// }
+// pigLatin = newArr.join(" ")//made array a string again
+// pigLatin = pigLatin.charAt(0).toUpperCase() + pigLatin.substring(1)//makes first letter of sentence capital
+// return (pigLatin)
+// }
+// console.log(engToPig('The quick brown fox'))
+//===================
+// var latToEn = function(oldword){
+// //turn string into array
+// var newArr=[]
+// newArr = oldword.split(" ")
+// for(var i=0;i<newArr.length;i++){
+// 	newArr[i]= newArr[i].slice(0, -2);//takes ay from each word
+// 	newArr[i]=newArr[i][newArr[i].length - 1]+newArr[i]
+// 	newArr[i]=newArr[i].slice(0,-1)
+// 	newArr[i] =newArr[i].toLowerCase()
+// }
+// english=newArr.join(" ")
+// english = english.charAt(0).toUpperCase() + english.substring(1)
+// console.log(english)
+// }
 
-
-
-
+// console.log(latToEn("Hetay uickqay rownbay oxfay"))
 
 // 6. Write a function which takes in two arrays and determines if they contain the same number of the same values.
 // [], [] -> true
 // [2, 3, 4], [1, 2, 3] -> false
 // ["a", "c", "b"], ["a", "b", "c"] -> true
 // [1, 1, 1], [1, 1, 1, 1] -> false
-var equalArr = function(arr1,arr2){
-	var nArr1=arr1.sort()
-	var nArr2=arr2.sort()
+// var equalArr = function(arr1,arr2){
+// 	var nArr1=arr1.sort()
+// 	var nArr2=arr2.sort()
 
-if(nArr1.join()===nArr2.join()){
-	return true
-}
-else{
-	return false
-}
-}
-equalArr([1,2,3,4,5],[1,2,3,4,5])
-equalArr(["a", "c", "b"], ["a", "b", "c"])
-equalArr([],[])
+// if(nArr1.join()===nArr2.join()){
+// 	return true
+// }
+// else{
+// 	return false
+// }
+// }
+// equalArr([1,2,3,4,5],[1,2,3,4,5])
+// equalArr(["a", "c", "b"], ["a", "b", "c"])
+// equalArr([],[])
 
 // var douggy=[1,2,3,4,56]
 // var shuggy=[1,2,3,4,56]
